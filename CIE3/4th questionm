@@ -1,0 +1,58 @@
+#calculator {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+#result {
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+            <!-- Add calculator buttons like numbers and operators -->
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
+
+function add(a, b) {
+    return a + b;
+}
+
+function subtract(a, b) {
+    return a - b;
+}
+
+function multiply(a, b) {
+    return a * b;
+}
+
+function divide(a, b) {
+    if (b !== 0) {
+        return a / b;
+    } else {
+        return "Error: Division by zero!";
+    }
+}
+
+// Copilot generated the functions for addition, subtraction, multiplication, and division.
+// It also suggested error handling for division by zero, which was helpful. 
+// I added button logic and linked the CSS styling manually.
